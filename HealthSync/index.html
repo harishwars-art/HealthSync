@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#030507">
+<title>HealthSync</title>
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="glow g1"></div><div class="glow g2"></div><div class="glow g3"></div>
+
+<!-- LANDING PAGE -->
+<div id="landing" class="screen">
+  <header class="lhead"><b class="brand">♥ HEALTHSYNC</b><span><button class="btn ghost sm" data-a="go-login">Login</button> <button class="btn sm" data-a="go-register">Register</button></span></header>
+  <section class="lhero">
+    <h1>Take Control of Your Health</h1>
+    <p class="sub">HealthSync — Your Personal Health &amp; Fitness Management System</p>
+    <p class="muted">Record health data, track workouts, reach goals and earn rewards. Everything is connected: finish a workout and your progress, reports, challenges and points update together.</p>
+    <div class="cta"><button class="btn" data-a="go-register">Get started</button><button class="btn ghost" data-a="go-login">I have an account</button></div>
+  </section>
+  <section class="feats">
+    <div class="glass pad"><i>♡</i><b>Health Monitoring</b><span class="muted">Weight, heart rate and blood pressure records.</span></div>
+    <div class="glass pad"><i>◈</i><b>Fitness Management</b><span class="muted">Plan routines that fit your day.</span></div>
+    <div class="glass pad"><i>⚡</i><b>Workout Tracking</b><span class="muted">Enter values, mark workouts done.</span></div>
+    <div class="glass pad"><i>◔</i><b>Progress Tracking</b><span class="muted">Daily, weekly and monthly progress.</span></div>
+    <div class="glass pad"><i>◎</i><b>Goals</b><span class="muted">Realistic weight and activity goals.</span></div>
+    <div class="glass pad"><i>★</i><b>Challenges &amp; Rewards</b><span class="muted">Earn points and keep your streak.</span></div>
+    <div class="glass pad"><i>▤</i><b>Medical Report Management</b><span class="muted">Keep a list of your report details.</span></div>
+  </section>
+  <p class="notice">HealthSync is a student project prototype. Data is stored locally in the browser and should not be used for storing real sensitive medical records.</p>
+</div>
+
+<!-- LOGIN / REGISTER -->
+<div id="auth" class="screen" hidden></div>
+
+<!-- APP SHELL -->
+<div id="app" class="screen" hidden>
+  <header class="topbar glass"><b class="brand">♥ HEALTHSYNC</b><nav id="topnav"></nav></header>
+  <main id="view"></main>
+  <div id="more" class="glass" hidden></div>
+  <nav class="bottomnav glass" id="bnav"></nav>
+</div>
+<div id="toast"></div>
+<script src="script.js"></script>
+</body></html>
